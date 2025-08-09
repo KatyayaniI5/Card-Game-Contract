@@ -1,0 +1,16 @@
+[package]
+name = "cardgame"
+version = "1.0.0"
+authors = []
+
+[addresses]
+my_addr="8a8f14ff1b479e2cb22460df0d4fc002233a91f72239539d72eddd9a276a0dc3"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
