@@ -1,0 +1,75 @@
+.connection-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.status-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-indicator i {
+  font-size: 12px;
+  color: #ff4757;
+}
+
+.status-indicator i.connected {
+  color: #2ed573;
+}
+
+.status-text {
+  font-weight: 600;
+  color: #333;
+}
+
+.account-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.connect-btn {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.connect-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.connect-btn.disconnect {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+}
+
+.connect-btn.disconnect:hover {
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+}
+
+@media (max-width: 768px) {
+  .connection-status {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+} 
